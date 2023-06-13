@@ -1,0 +1,35 @@
+.category-list-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+
+    .category{
+        height: 500px;
+        position: relative;
+        background-size: cover;
+
+        .category-title{
+            color: white;
+            position: absolute;
+            bottom: 1%;
+            right: 6%;
+            font-size: 3em;
+            font-weight: bold;
+            background-color: black;
+            padding: 5px 10px;
+        }
+    }
+
+    .category.main{
+        background-image: url("../../assets/main.jpeg");
+    }
+    .category.starter{
+        background-image: url("../../assets/starter.jpeg");
+    }
+    .category.drinks{
+        background-image: url("../../assets/drinks.jpeg");
+    }
+    .category.dessert{
+        background-image: url("../../assets/Dessert.jpeg");
+    }
+}

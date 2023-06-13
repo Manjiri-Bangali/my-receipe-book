@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    justify-content: start;
+    gap: 11em;
+
+    .recipe-list{
+        min-width: 20%;
+        text-align: left;
+    
+        .menuTitle{
+            text-align: left;
+        }
+    }
+
+    .recipe-container {
+        text-align: left;
+
+        .multiplier:first-of-type{
+            margin-left: 20px;
+        }
+
+        button.multiplier{
+            background: white;
+            border: black 1px solid;
+            margin-right:2px;
+        }
+
+        button.multiplier.active{
+            background-color: #6c757d;
+            border: black 1px solid;
+            color: white;
+        }
+
+        button.add-to-order{
+            float: right;
+            margin: 10px 0;
+        }
+
+        h1{
+            display: inline;
+        }
+
+        .recipe-info{
+            padding: 10px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .container {
+      display: block;
+    }
+}
